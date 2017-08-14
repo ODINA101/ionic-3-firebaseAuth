@@ -9,7 +9,7 @@ import { HomePage } from '../pages/home/home';
 import {AngularFireModule } from 'angularfire2';
 import { RegPage } from '../pages/reg/reg';
 import {AngularFireAuthModule } from 'angularfire2/auth';
-
+import {LoggedPage } from '../pages/logged/logged';
 
 
 
@@ -17,7 +17,8 @@ import {AngularFireAuthModule } from 'angularfire2/auth';
   declarations: [
     MyApp,
     HomePage,
-    RegPage
+    RegPage,
+    LoggedPage
   ],
   imports: [
     BrowserModule,
@@ -29,7 +30,8 @@ import {AngularFireAuthModule } from 'angularfire2/auth';
   entryComponents: [
     MyApp,
     HomePage,
-    RegPage
+    RegPage,
+    LoggedPage
   ],
   providers: [
     StatusBar,

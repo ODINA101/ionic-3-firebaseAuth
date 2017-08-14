@@ -19,13 +19,15 @@ async reg(user:User) {
   try {
 const result = await this.afAuth.auth.createUserWithEmailAndPassword(user.email,user.password);
 console.log(result);
+this.navCtrl.setRoot(HomePage);
+
   }
   catch(e) {
     console.error(e);
   }
 }
 login() {
-  this.navCtrl.push(HomePage);
+  this.navCtrl.setRoot(HomePage);
 }
 
 
